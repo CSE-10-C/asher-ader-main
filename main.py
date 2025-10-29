@@ -1,14 +1,19 @@
+
+#in order for me to make this code random i had to import randomness cuz randomness isn't built into computors
+
 import random
 
-print("Random name generator for eveyone in CSE class ")
+#the kind of "title" to the code
+print("1 Random name generator for eveyone in our CSE class ")
 
-firstnames = ["Asher", "Nate", "Caspian", "Shaan", "Alexander", "Nayoki", "Seth", "David","Rayan","Colin","Maddox","Dennis", "Evan","Blake"]
-lastnames = ["Ader", "Chao", " Farman-Farmaian", "Glazer", "Graves", "Izumi", "leberman", "Lozado", "Mohammadinia", " Poirier","Prata", "Riley","Sherman-Chan", "Slobodsky"]
+#the list of first and last names that could randomly be chosen
+randomfirst = ["Asher", "Nate", "Caspian", "Shaan", "Alexander", "Naoki", "Seth", "David","Rayan","Colin","Maddox","Dennis", "Evan","Blake"]
+randomlast = ["Ader", "Chao", " Farman-Farmaian", "Glazer", "Graves", "Izumi", "leberman", "Lozado", "Mohammadinia", " Poirier","Prata", "Riley","Sherman-Chan", "Slobodsky"]
 
-def generatename():
-    first = random.choice(firstnames)
-    last = random.choice(lastnames)
-    return f"{first} {last}"
-#printed code
-for i in range(1):
-    print(generatename())
+#making a variable for first and last with and random first and last name from the list
+#"random.choice" pics a name from the list 
+first = random.choice(randomfirst)
+last = random.choice(randomlast)
+
+#printing the random name out
+print(first,last)
