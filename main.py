@@ -1,4 +1,3 @@
-
 #in order for me to make this code random i had to import randomness cuz randomness isn't built into computors
 
 import random
