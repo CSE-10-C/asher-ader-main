@@ -14,15 +14,18 @@ Given a year, determine whether it is a leap year. If it is a leap year, return 
 '''
 
 #this is the variable for the the number that the user imputs
-n = int(input("Enter any number "))
+n = int(input("Enter any year"))
 
-
+#this is like checks if the number inputed is divisable by 400 and has no remander
 if n % 400 == 0:
     print(True)
+    #this checks if the number inputed is divisable by 100 and has no remander
 elif n % 100 == 0:
     print(False)
+    #this  checks if the number inputed is divisable by 4 and has no remander
 elif n % 4 == 0:
     print(True)
+    # this is just any number that doesn't do any of those things above
 else:
     print(False)
 
